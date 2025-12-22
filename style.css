@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#gameBoard {
+  width: 400px;
+  height: 400px;
+  background-color: #000;
+  position: relative;
+  margin-top: 20px;
+}
+
+.snake {
+  width: 20px;
+  height: 20px;
+  background-color: lime;
+  position: absolute;
+}
+
+.food {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+}
