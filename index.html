@@ -3,14 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake Game</title>
-  <link rel="stylesheet" href="style.css">
+  <title>100-in-1 Mini Games</title>
+  <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-  <h1>Snake Game</h1>
-  <div id="gameBoard"></div>
-  <p>Score: <span id="score">0</span></p>
+  <!-- Header -->
+  <header>
+    <h1>🎮 100-in-1 Mini Games</h1>
+    <p class="subtitle">Choose a game to play!</p>
+  </header>
 
-  <script src="script.js"></script>
+  <!-- Search and Filter Bar -->
+  <div class="controls">
+    <input type="text" id="searchBar" placeholder="Search games..." />
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="arcade">Arcade</option>
+      <option value="puzzle">Puzzle</option>
+      <option value="strategy">Strategy</option>
+      <option value="casual">Casual</option>
+      <option value="trivia">Trivia</option>
+    </select>
+  </div>
+
+  <!-- Games Grid -->
+  <div class="games-container" id="gamesContainer">
+    <!-- Game tiles will be dynamically generated here -->
+  </div>
+
+  <!-- Game Modal -->
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="gameTitle">Game Title</h2>
+        <div class="modal-controls">
+          <button id="restartBtn" class="btn-restart">🔄 Restart</button>
+          <button id="closeBtn" class="btn-close">✖</button>
+        </div>
+      </div>
+      <div class="score-bar">
+        <span>Score: <span id="currentScore">0</span></span>
+        <span>High Score: <span id="highScore">0</span></span>
+      </div>
+      <div id="gameContainer" class="game-canvas">
+        <!-- Game will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/gameManager.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/dashboard.js"></script>
 </body>
 </html>
