@@ -95,6 +95,9 @@ class GameManager {
     let gameInterval;
     let isGameOver = false;
 
+    // Capture 'this' context for use in nested functions
+    const self = this;
+
     const foodElement = document.createElement('div');
     foodElement.style.width = '20px';
     foodElement.style.height = '20px';
@@ -169,7 +172,7 @@ class GameManager {
 
       if(head.x === food.x && head.y === food.y) {
         score++;
-        this.updateScore(score);
+        self.updateScore(score);
         placeFood();
       } else {
         snake.pop();
@@ -230,7 +233,13 @@ class GameManager {
       if (!gameActive) return;
       
       // Simple AI: Random available cell
-      const emptyCells = gameState.map((cell, idx) => cell === '' ? idx : null).filter(val => val !== null);
+      const emptyCells = [];
+      for (let i = 0; i < gameState.length; i++) {
+        if (gameState[i] === '') {
+          emptyCells.push(i);
+        }
+      }
+      
       if (emptyCells.length > 0) {
         const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
         setTimeout(() => {

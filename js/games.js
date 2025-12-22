@@ -58,7 +58,7 @@ const GAMES_CATALOG = [
   { id: 49, name: 'Card War', icon: '🎴', category: 'strategy', description: 'Higher card wins', implemented: false },
   { id: 50, name: 'Dots & Boxes', icon: '📦', category: 'strategy', description: 'Complete squares', implemented: false },
   { id: 51, name: 'Nim', icon: '🪵', category: 'strategy', description: 'Mathematical game', implemented: false },
-  { id: 52, name: 'Mill', icon: '⭕', category: 'strategy', description: 'Nine men\'s morris', implemented: false },
+  { id: 52, name: 'Mill', icon: '⭕', category: 'strategy', description: 'Nine men\\'s morris', implemented: false },
   { id: 53, name: 'Mastermind', icon: '🎯', category: 'strategy', description: 'Code breaking game', implemented: false },
   { id: 54, name: 'Gomoku', icon: '⚫', category: 'strategy', description: 'Five in a row', implemented: false },
   { id: 55, name: 'Hex', icon: '⬡', category: 'strategy', description: 'Connect opposite sides', implemented: false },
