@@ -41,12 +41,20 @@ simple_game/
 
 No build process or server required - it's that simple!
 
-### Currently Implemented Games
+### Currently Implemented Games (10 out of 100)
 
 1. **Snake** 🐍 - Classic snake game with arrow key controls
 2. **Tic Tac Toe** ⭕ - Play against the computer
+3. **Memory Match** 🃏 - Card matching game with fruit symbols
+4. **Whack-a-Mole** 🔨 - Fast-paced mole clicking game
+5. **Reaction Time** ⏱️ - Test your reflexes with color changes
+6. **Math Quiz** ➕ - 10-question math challenge with multiple choice
+7. **Rock Paper Scissors** ✂️ - Classic hand game vs computer
+8. **Number Guess** 🔢 - Guess the number between 1-100
+9. **Color Match** 🎨 - Match word color to text color (Stroop test)
+10. **Coin Flip** 🪙 - Heads or tails prediction game
 
-The other 98 games are placeholders that can be implemented using the same pattern.
+The other 90 games are placeholders that can be implemented using the same pattern.
 
 ## 🎯 Game Categories
 

@@ -26,7 +26,7 @@ const GAMES_CATALOG = [
 
   // Puzzle Games (21-40)
   { id: 21, name: 'Tic Tac Toe', icon: '⭕', category: 'puzzle', description: 'Classic X and O game', implemented: true },
-  { id: 22, name: 'Memory Match', icon: '🃏', category: 'puzzle', description: 'Match pairs of cards', implemented: false },
+  { id: 22, name: 'Memory Match', icon: '🃏', category: 'puzzle', description: 'Match pairs of cards', implemented: true },
   { id: 23, name: 'Sudoku', icon: '🔢', category: 'puzzle', description: 'Number puzzle', implemented: false },
   { id: 24, name: '2048', icon: '🔲', category: 'puzzle', description: 'Combine numbers', implemented: false },
   { id: 25, name: 'Sliding Puzzle', icon: '🧩', category: 'puzzle', description: 'Arrange the tiles', implemented: false },
@@ -58,16 +58,16 @@ const GAMES_CATALOG = [
   { id: 49, name: 'Card War', icon: '🎴', category: 'strategy', description: 'Higher card wins', implemented: false },
   { id: 50, name: 'Dots & Boxes', icon: '📦', category: 'strategy', description: 'Complete squares', implemented: false },
   { id: 51, name: 'Nim', icon: '🪵', category: 'strategy', description: 'Mathematical game', implemented: false },
-  { id: 52, name: 'Mill', icon: '⭕', category: 'strategy', description: 'Nine men\\'s morris', implemented: false },
+  { id: 52, name: 'Mill', icon: '⭕', category: 'strategy', description: "Nine men's morris", implemented: false },
   { id: 53, name: 'Mastermind', icon: '🎯', category: 'strategy', description: 'Code breaking game', implemented: false },
   { id: 54, name: 'Gomoku', icon: '⚫', category: 'strategy', description: 'Five in a row', implemented: false },
   { id: 55, name: 'Hex', icon: '⬡', category: 'strategy', description: 'Connect opposite sides', implemented: false },
 
   // Casual Games (56-75)
-  { id: 56, name: 'Whack-a-Mole', icon: '🔨', category: 'casual', description: 'Hit the moles', implemented: false },
+  { id: 56, name: 'Whack-a-Mole', icon: '🔨', category: 'casual', description: 'Hit the moles', implemented: true },
   { id: 57, name: 'Cookie Clicker', icon: '🍪', category: 'casual', description: 'Click to bake cookies', implemented: false },
-  { id: 58, name: 'Reaction Time', icon: '⏱️', category: 'casual', description: 'Test your reflexes', implemented: false },
-  { id: 59, name: 'Color Match', icon: '🎨', category: 'casual', description: 'Match the color', implemented: false },
+  { id: 58, name: 'Reaction Time', icon: '⏱️', category: 'casual', description: 'Test your reflexes', implemented: true },
+  { id: 59, name: 'Color Match', icon: '🎨', category: 'casual', description: 'Match the color', implemented: true },
   { id: 60, name: 'Speed Click', icon: '👆', category: 'casual', description: 'Click as fast as you can', implemented: false },
   { id: 61, name: 'Ball Drop', icon: '⚽', category: 'casual', description: 'Drop balls in buckets', implemented: false },
   { id: 62, name: 'Peg Solitaire', icon: '🔵', category: 'casual', description: 'Jump and remove pegs', implemented: false },
@@ -87,7 +87,7 @@ const GAMES_CATALOG = [
 
   // Trivia & Word Games (76-90)
   { id: 76, name: 'Trivia Quiz', icon: '❓', category: 'trivia', description: 'Test your knowledge', implemented: false },
-  { id: 77, name: 'Math Quiz', icon: '➕', category: 'trivia', description: 'Solve math problems', implemented: false },
+  { id: 77, name: 'Math Quiz', icon: '➕', category: 'trivia', description: 'Solve math problems', implemented: true },
   { id: 78, name: 'Geography Quiz', icon: '🌍', category: 'trivia', description: 'World capitals quiz', implemented: false },
   { id: 79, name: 'Flag Quiz', icon: '🚩', category: 'trivia', description: 'Guess the flag', implemented: false },
   { id: 80, name: 'Anagram', icon: '🔤', category: 'trivia', description: 'Unscramble words', implemented: false },
@@ -104,9 +104,9 @@ const GAMES_CATALOG = [
 
   // Extra Games (91-100)
   { id: 91, name: 'Dice Roll', icon: '🎲', category: 'casual', description: 'Roll the dice', implemented: false },
-  { id: 92, name: 'Coin Flip', icon: '🪙', category: 'casual', description: 'Flip a coin', implemented: false },
-  { id: 93, name: 'Rock Paper Scissors', icon: '✂️', category: 'casual', description: 'Beat the computer', implemented: false },
-  { id: 94, name: 'Number Guess', icon: '🔢', category: 'casual', description: 'Guess the number', implemented: false },
+  { id: 92, name: 'Coin Flip', icon: '🪙', category: 'casual', description: 'Flip a coin', implemented: true },
+  { id: 93, name: 'Rock Paper Scissors', icon: '✂️', category: 'casual', description: 'Beat the computer', implemented: true },
+  { id: 94, name: 'Number Guess', icon: '🔢', category: 'casual', description: 'Guess the number', implemented: true },
   { id: 95, name: 'Lottery', icon: '🎰', category: 'casual', description: 'Pick lucky numbers', implemented: false },
   { id: 96, name: 'Scratch Card', icon: '🎫', category: 'casual', description: 'Scratch to win', implemented: false },
   { id: 97, name: 'Slot Machine', icon: '🎰', category: 'casual', description: 'Spin to win', implemented: false },
